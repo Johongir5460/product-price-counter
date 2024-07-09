@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bozorlik Ro'yxati</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 5px 0;
+        background-color: white;
+      }
+      li:first-child {
+        background-color: lightblue;
+      }
+      li:last-child {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="productForm">
+      <input type="text" id="name" placeholder="Mahsulot nomi" required />
+      <input type="number" id="amount" placeholder="Miqdori" required />
+      <input type="number" id="price" placeholder="Narxi" required />
+      <button type="submit">Qo'shish</button>
+    </form>
+    <ul id="productList"></ul>
+    <div>
+      <p>Jami mahsulotlar soni: <span id="productCount">0</span></p>
+      <p>Umumiy summa: <span id="totalCost">0</span> so'm</p>
+    </div>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>
